@@ -102,8 +102,14 @@ function puzzlePage(
 ): Page {
   const rngRows = 10;
   const letters = "ABCDEFGHIKLMNOPRSTUVWXYZ";
+  // deterministic grid — SSR and client must agree (no Math.random in render paths)
+  let s0 = seed * 7919 + 12345;
+  const rnd = () => {
+    s0 = (s0 * 1103515245 + 12345) % 2147483648;
+    return s0 / 2147483648;
+  };
   const grid = Array.from({ length: rngRows }, () =>
-    Array.from({ length: 10 }, () => letters[Math.floor(Math.random() * letters.length)]),
+    Array.from({ length: 10 }, () => letters[Math.floor(rnd() * letters.length)]),
   );
   return {
     id: pageId(),
