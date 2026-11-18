@@ -13,3 +13,4 @@ test-results/
 .next/
 next-env.d.ts
 *.tsbuildinfo
+.vercel
