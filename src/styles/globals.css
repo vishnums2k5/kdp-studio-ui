@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "./tokens.css";
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  body {
+    background: rgb(var(--c-canvas));
+    color: rgb(var(--c-ink));
+    font-family: var(--font-sans), system-ui, sans-serif;
+    font-size: var(--t-base);
+  }
+  ::selection {
+    background: rgb(var(--c-primary) / 0.2);
+  }
+  :focus-visible {
+    outline: none;
+    box-shadow: var(--sh-focus);
+    border-radius: var(--r-sm);
+  }
+  /* Scrollbars — slim, neutral (observed app chrome style) */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: rgb(var(--c-line-strong)) transparent;
+  }
+  *::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  *::-webkit-scrollbar-thumb {
+    background: rgb(var(--c-line-strong));
+    border-radius: 8px;
+    border: 3px solid transparent;
+    background-clip: content-box;
+  }
+  *::-webkit-scrollbar-track {
+    background: transparent;
+  }
+}

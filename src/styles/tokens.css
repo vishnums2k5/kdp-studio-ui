@@ -1,0 +1,120 @@
+/*
+ * KDP STUDIO — DESIGN TOKENS (single source of truth, prompt §4)
+ * Original palette: same ROLES as the reference (primary / surface / text /
+ * border / success / warning / danger), original values. 4-pt spacing.
+ */
+:root {
+  /* ---- color roles, light theme ---- */
+  --c-primary: 86 70 214;        /* #5646D6 */
+  --c-primary-hover: 71 56 184;  /* #4738B8 */
+  --c-primary-soft: 238 240 252; /* #EEF0FC */
+  --c-on-primary: 255 255 255;
+
+  --c-surface: 255 255 255;
+  --c-surface-2: 247 248 252;    /* panels, cards */
+  --c-surface-3: 238 240 246;    /* hover fills */
+  --c-canvas: 240 243 250;       /* studio canvas backdrop */
+
+  --c-ink: 28 30 38;             /* #1C1E26 */
+  --c-ink-2: 90 94 110;          /* #5A5E6E */
+  --c-ink-3: 138 143 163;        /* #8A8FA3 */
+
+  --c-line: 228 231 240;         /* #E4E7F0 */
+  --c-line-strong: 201 206 221;  /* #C9CEDD */
+
+  --c-success: 23 138 80;
+  --c-success-soft: 232 246 238;
+  --c-warning: 154 103 0;        /* amber-800-ish for text on soft */
+  --c-warning-strong: 191 106 0;
+  --c-warning-soft: 255 246 224;
+  --c-danger: 198 55 69;
+  --c-danger-soft: 253 235 237;
+  --c-info: 37 99 174;
+  --c-info-soft: 233 241 250;
+  --c-accent: 214 63 138;        /* used sparingly (AI actions) */
+  --c-accent-soft: 250 234 243;
+
+  /* ---- type scale (px) ---- */
+  --t-xs: 12px;
+  --t-sm: 13px;
+  --t-base: 14px;
+  --t-lg: 16px;
+  --t-xl: 20px;
+  --t-2xl: 24px;
+  --t-3xl: 30px;
+
+  /* ---- radii ---- */
+  --r-sm: 6px;
+  --r-md: 8px;
+  --r-lg: 12px;
+  --r-xl: 16px;
+  --r-pill: 999px;
+
+  /* ---- borders / shadows ---- */
+  --bw: 1px;
+  --sh-sm: 0 1px 2px rgb(28 30 38 / 0.06);
+  --sh-md: 0 2px 8px rgb(28 30 38 / 0.08), 0 1px 2px rgb(28 30 38 / 0.05);
+  --sh-lg: 0 12px 32px rgb(28 30 38 / 0.14), 0 4px 8px rgb(28 30 38 / 0.06);
+  --sh-focus: 0 0 0 3px rgb(86 70 214 / 0.28);
+
+  /* ---- spacing scale reminder: 4-pt base (use Tailwind n1=4px steps) ---- */
+
+  /* ---- z-index layers ---- */
+  --z-rail: 30; --z-panel: 40; --z-bar: 50; --z-modal: 80; --z-toast: 90;
+
+  /* ---- breakpoints ---- */
+  --bp-sm: 640px; --bp-md: 768px; --bp-lg: 1024px; --bp-xl: 1280px; --bp-2xl: 1440px;
+
+  /* ---- motion ---- */
+  --d-fast: 120ms; --d-base: 160ms; --d-slow: 240ms;
+  --ease: cubic-bezier(0.2, 0.7, 0.3, 1);
+
+  /* ---- icon sizes ---- */
+  --ic-xs: 14px; --ic-sm: 16px; --ic-md: 18px; --ic-lg: 20px;
+
+  /* ---- layout ---- */
+  --shell-sidebar-w: 248px;
+  --shell-sidebar-w-mobile: 280px;
+}
+
+.dark {
+  --c-primary: 124 114 232;      /* #7C72E8 */
+  --c-primary-hover: 140 131 240;
+  --c-primary-soft: 46 44 84;
+  --c-on-primary: 255 255 255;
+
+  --c-surface: 28 30 38;         /* #1C1E26 */
+  --c-surface-2: 35 38 48;       /* #232630 */
+  --c-surface-3: 46 50 63;
+  --c-canvas: 20 22 28;
+
+  --c-ink: 236 238 245;
+  --c-ink-2: 166 172 191;
+  --c-ink-3: 122 128 148;
+
+  --c-line: 46 50 63;
+  --c-line-strong: 62 67 84;
+
+  --c-success: 74 196 129;
+  --c-success-soft: 22 48 34;
+  --c-warning: 235 176 76;
+  --c-warning-strong: 235 176 76;
+  --c-warning-soft: 55 43 16;
+  --c-danger: 235 105 118;
+  --c-danger-soft: 58 26 31;
+  --c-info: 106 165 235;
+  --c-info-soft: 20 40 62;
+  --c-accent: 240 122 178;
+  --c-accent-soft: 58 24 44;
+
+  --sh-sm: 0 1px 2px rgb(0 0 0 / 0.4);
+  --sh-md: 0 2px 8px rgb(0 0 0 / 0.45), 0 1px 2px rgb(0 0 0 / 0.3);
+  --sh-lg: 0 12px 32px rgb(0 0 0 / 0.55), 0 4px 8px rgb(0 0 0 / 0.35);
+  --sh-focus: 0 0 0 3px rgb(124 114 232 / 0.4);
+}
+
+/* ---------- JS-readable token mirror (canvas / Konva can't read CSS vars) */
+:root {
+  --tok-json-light: tokens-light;
+  --tok-json-dark: tokens-dark;
+}
