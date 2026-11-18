@@ -138,7 +138,7 @@ export function Banner({
       <TriangleAlert className="mt-0.5 size-4 shrink-0" aria-hidden />
       <div className="min-w-0 flex-1">
         <p className="text-sm font-semibold">{title}</p>
-        {children && <div className="mt-1 text-sm opacity-90">{children}</div>}
+        {children && <div className="mt-1 text-sm">{children}</div>}
       </div>
       {onDismiss && (
         <button

@@ -17,12 +17,12 @@
 
   --c-ink: 28 30 38;             /* #1C1E26 */
   --c-ink-2: 90 94 110;          /* #5A5E6E */
-  --c-ink-3: 138 143 163;        /* #8A8FA3 */
+  --c-ink-3: 110 115 135;        /* #6E7387 — AA on surface */
 
   --c-line: 228 231 240;         /* #E4E7F0 */
   --c-line-strong: 201 206 221;  /* #C9CEDD */
 
-  --c-success: 23 138 80;
+  --c-success: 19 107 64;        /* #136B40 — AA on success-soft */
   --c-success-soft: 232 246 238;
   --c-warning: 154 103 0;        /* amber-800-ish for text on soft */
   --c-warning-strong: 191 106 0;
@@ -31,7 +31,7 @@
   --c-danger-soft: 253 235 237;
   --c-info: 37 99 174;
   --c-info-soft: 233 241 250;
-  --c-accent: 214 63 138;        /* used sparingly (AI actions) */
+  --c-accent: 184 49 111;       /* #B8316F — AA on accent-soft */
   --c-accent-soft: 250 234 243;
 
   /* ---- type scale (px) ---- */
@@ -90,7 +90,7 @@
 
   --c-ink: 236 238 245;
   --c-ink-2: 166 172 191;
-  --c-ink-3: 122 128 148;
+  --c-ink-3: 140 147 168;       /* #8C93A8 — AA in dark */
 
   --c-line: 46 50 63;
   --c-line-strong: 62 67 84;

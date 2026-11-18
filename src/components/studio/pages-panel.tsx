@@ -175,7 +175,6 @@ function PageCard({
         onClick={onSelect}
         className="flex min-w-0 flex-1 items-center gap-3 text-left"
         aria-current={selected ? "true" : undefined}
-        aria-label={`${PAGE_TYPE_LABEL[page.type] ?? page.type}, page ${index + 1}`}
       >
         <div className="grid w-16 shrink-0 place-items-center overflow-hidden rounded-sm bg-white p-0.5">
           <PageThumb page={page} book={book} scale={0.052} />

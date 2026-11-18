@@ -1,0 +1,50 @@
+[
+  {
+    "route": "/dashboard",
+    "violations": []
+  },
+  {
+    "route": "/books",
+    "violations": []
+  },
+  {
+    "route": "/images",
+    "violations": []
+  },
+  {
+    "route": "/library",
+    "violations": []
+  },
+  {
+    "route": "/create",
+    "violations": []
+  },
+  {
+    "route": "/create/kids-story",
+    "violations": []
+  },
+  {
+    "route": "/studio/woodland-activity-sampler",
+    "violations": []
+  },
+  {
+    "route": "/studio/pip-the-brave-little-hedgehog/cover",
+    "violations": []
+  },
+  {
+    "route": "/research",
+    "violations": []
+  },
+  {
+    "route": "/account",
+    "violations": []
+  },
+  {
+    "route": "/account/billing",
+    "violations": []
+  },
+  {
+    "route": "/dev/components",
+    "violations": []
+  }
+]

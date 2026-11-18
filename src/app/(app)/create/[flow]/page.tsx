@@ -45,7 +45,7 @@ export default function GeneratorPage() {
           <div>
             <h2 className="text-2xl font-bold">{def.label}</h2>
             <p className="mt-1 text-sm text-ink-2">{def.tagline}</p>
-            <p className="mt-1 text-xs text-ink-3">{def.cost}</p>
+            <p className="mt-1 text-xs text-ink-2">{def.cost}</p>
           </div>
           <Button onClick={() => setOpen(true)}>
             <Plus className="size-4" aria-hidden />

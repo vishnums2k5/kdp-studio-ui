@@ -79,7 +79,7 @@ export default function BillingPage() {
                     {current && <Badge tone="primary">Current</Badge>}
                   </div>
                   <p className="mt-1 text-2xl font-bold">{p.price}</p>
-                  <p className="text-xs text-ink-3">{p.credits}</p>
+                  <p className="text-xs text-ink-2">{p.credits}</p>
                   {!current && (
                     <Button
                       size="sm"

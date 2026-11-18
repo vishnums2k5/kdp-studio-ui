@@ -164,19 +164,19 @@ function GalleryInner() {
 
       <Section title="Controls">
         <Row label="Checkbox">
-          <Checkbox checked={checked} onCheckedChange={(v) => setChecked(!!v)} id="cb1" />
-          <Checkbox indeterminate id="cb2" />
-          <Checkbox disabled id="cb3" />
+          <Checkbox checked={checked} onCheckedChange={(v) => setChecked(!!v)} id="cb1" aria-label="Checkbox checked" />
+          <Checkbox indeterminate id="cb2" aria-label="Checkbox indeterminate" />
+          <Checkbox disabled id="cb3" aria-label="Checkbox disabled" />
         </Row>
         <Row label="Radio">
           <RadioGroup defaultValue="a" className="flex gap-4">
-            <RadioItem value="a" id="r1" /> <span className="text-sm">Option A</span>
-            <RadioItem value="b" id="r2" /> <span className="text-sm">Option B</span>
+            <RadioItem value="a" id="r1" aria-label="Option A" /> <span className="text-sm">Option A</span>
+            <RadioItem value="b" id="r2" aria-label="Option B" /> <span className="text-sm">Option B</span>
           </RadioGroup>
         </Row>
         <Row label="Switch">
-          <Switch checked={switchOn} onCheckedChange={setSwitchOn} id="sw1" />
-          <Switch disabled id="sw2" />
+          <Switch checked={switchOn} onCheckedChange={setSwitchOn} id="sw1" aria-label="Example switch" />
+          <Switch disabled id="sw2" aria-label="Disabled switch" />
         </Row>
         <Row label="Slider">
           <Slider value={sliderVal} onValueChange={setSliderVal} max={100} className="max-w-64" />
@@ -185,6 +185,7 @@ function GalleryInner() {
         <Row label="Select">
           <Select
             className="max-w-56"
+            ariaLabel="Answers per page"
             placeholder="Answers per page"
             options={[
               { value: "1", label: "1 per page" },

@@ -145,8 +145,8 @@ export default function BooksPage() {
             value={view}
             onValueChange={(v) => setView(v)}
             options={[
-              { value: "grid", label: "", icon: <LayoutGrid className="size-4" aria-hidden /> },
-              { value: "list", label: "", icon: <List className="size-4" aria-hidden /> },
+              { value: "grid", label: "", ariaLabel: "Grid view", icon: <LayoutGrid className="size-4" aria-hidden /> },
+              { value: "list", label: "", ariaLabel: "List view", icon: <List className="size-4" aria-hidden /> },
             ]}
           />
           <Button

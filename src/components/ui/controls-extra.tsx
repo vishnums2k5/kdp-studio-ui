@@ -16,7 +16,7 @@ export function Segmented<T extends string>({
   size = "md",
   ariaLabel,
 }: {
-  options: { value: T; label: string; icon?: React.ReactNode }[];
+  options: { value: T; label: string; icon?: React.ReactNode; ariaLabel?: string }[];
   value: T;
   onValueChange: (v: T) => void;
   className?: string;
@@ -39,6 +39,7 @@ export function Segmented<T extends string>({
             key={o.value}
             role="radio"
             aria-checked={active}
+            aria-label={o.ariaLabel ?? o.label}
             onClick={() => onValueChange(o.value)}
             className={cn(
               "inline-flex items-center gap-1.5 rounded-sm font-medium transition-colors duration-[var(--d-fast)]",

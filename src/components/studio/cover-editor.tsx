@@ -113,6 +113,7 @@ function CoverEditorInner({
               <span className="absolute bottom-2 left-3 text-xs font-bold text-white drop-shadow">BACK</span>
             </div>
             <div
+              role="img"
               className="relative flex w-[46px] items-center justify-center"
               style={{ background: hideSpine ? "#5A5E6E" : "#7C3AED" }}
               aria-label={hideSpine ? "Spine — plain (too thin for text)" : "Spine"}
@@ -166,7 +167,7 @@ function CoverEditorInner({
                 Generate {target} cover
               </Button>
             </div>
-            <p className="mt-2 text-center text-xs text-ink-3">
+            <p className="mt-2 text-center text-xs text-ink-2">
               Drop or paste images · Shift+Enter for a new line · AI cover: 5 credits
             </p>
           </div>
